@@ -29,6 +29,18 @@ body {
     z-index: 3;
 }
 
+.header::after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.6;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+}
+
 .container {
     margin: 0 auto;
     display: flex;
@@ -60,6 +72,10 @@ body {
     flex-wrap: wrap;
 }
 
+.menu-list-item:nth-child(n +2) {
+    margin-left: 33px;
+}
+
 .menu-link {
     text-decoration: none;
     text-transform: uppercase;
@@ -84,20 +100,35 @@ body {
     z-index: 3;
 }
 
-.menu-list-item:nth-child(n +2) {
-    margin-left: 33px;
-}
+.header-section {
+    position: relative;
+  }
 
-.header::after {
-    content: "";
-    background-color: #000000;
-    opacity: 0.6;
-    
+.header-section::after {
+    content: " ______ ";
+    margin-right: auto;
+    margin-left: 31.5em;
+    margin-top: 2px;
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    color: #999966;
+    opacity: 0.4;
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;  
+    left: 105px;
+}
+
+.header-name {
+    display: block;
+    margin-top: 15px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
 }
 
 .section-content {
@@ -128,6 +159,14 @@ body {
     left: 0;  
 }
 
+.article-category {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999966;
+}
+
 .article-link {
     position: absolute;
     margin-left: 20px;
@@ -146,53 +185,4 @@ body {
     font-weight: 700;
     z-index: 3;
 
-}
-
-.header-name {
-    display: block;
-    margin-top: 15px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #000000;
-    text-align: center;
-}
-
-.header-name {
-    margin-top: 0;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-.header-section {
-    /* margin-bottom: 43px; */
-    position: relative;
-  }
-
-.header-section::after {
-    content: " ______ ";
-    margin-right: auto;
-    margin-left: 31.5em;
-    margin-top: 2px;
-    display: block;
-    font-size: 26px;
-    font-weight: bold;
-    color: #999966;
-    opacity: 0.4;
-    position: absolute;
-    top: 0;
-    left: 105px;
-}
-
-.article-category {
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #999966;
 }
