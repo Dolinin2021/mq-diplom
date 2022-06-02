@@ -102,7 +102,7 @@ body {
 
 .header-section {
     position: relative;
-  }
+}
 
 .header-section::after {
     content: " ______ ";
@@ -184,5 +184,4 @@ body {
     font-family: inherit;
     font-weight: 700;
     z-index: 3;
-
 }
