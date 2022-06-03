@@ -107,12 +107,12 @@ body {
 .header-section::after {
     content: " ______ ";
     margin-right: auto;
-    margin-left: 31.5em;
+    margin-left: 31.2em;
     margin-top: 2px;
     display: block;
     font-size: 26px;
     font-weight: bold;
-    color: #999966;
+    color: #b59f5b;
     opacity: 0.4;
     position: absolute;
     top: 0;
@@ -144,7 +144,7 @@ body {
     width: 120%;
 }
 
-.article-preview:nth-child(n +2) {
+.article-preview:nth-child(n+2) {
     margin-left: 6px;
 }
 
@@ -161,30 +161,49 @@ body {
 }
 
 .article-category {
+    position: absolute;
+    left: 40px;
+    top: 260px;
     font-family: inherit;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    color: #999966;
+    color: #b59f5b;
+    z-index: 3;
+}
+
+.article-category_secondary {
+    top: 240px;
+}
+
+.article-category-item {
+    margin-right: 20px;
 }
 
 .article-link {
     position: absolute;
-    margin-left: 20px;
-    padding: 20px;
+    height: 50px;
+    width: 85%;
+    padding: 15px;
     bottom: 20px;
-    right: 20px;
+    left: 10px;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding-right: 10px;
+    padding-top: 40px;
     
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
+    text-align: start;
     border: 3px solid #999966;
     font-family: inherit;
     font-weight: 700;
     z-index: 3;
+}
+
+.article-link_secondary {
+    height: 70px;
 }
 
 .picture {
