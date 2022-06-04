@@ -229,7 +229,7 @@ body {
     box-sizing: border-box;
 }
 
-.post-list {
+.post-preview {
     display: flex;
     margin-bottom: 60px;
 }
@@ -238,15 +238,15 @@ body {
     height: 295px;
 }
 
-.post-list-article {
+.post-preview-article {
     margin-left: 30px;
 }
 
-.post-list-article-header {
+.post-preview-article-header {
     padding-bottom: 40px;
 }
 
-.post-article-category {
+.post-preview-article-category {
     font-family: inherit;
     font-weight: bold;
     font-size: 14px;
@@ -254,7 +254,7 @@ body {
     color: #999966;
 }
 
-.post-article-category-item:nth-child(n+2) {
+.post-preview-article-category-item:nth-child(n+2) {
     margin-left: 15px;
 }
 
