@@ -141,7 +141,7 @@ body {
 .article-preview {
     position: relative;
     padding: 0;
-    width: 120%;
+    width: 105%;
 }
 
 .article-preview:nth-child(n+2) {
@@ -163,7 +163,7 @@ body {
 .article-category {
     position: absolute;
     left: 40px;
-    top: 255px;
+    top: 236px;
     font-family: inherit;
     font-weight: bold;
     font-size: 14px;
@@ -173,7 +173,7 @@ body {
 }
 
 .article-category_secondary {
-    top: 235px;
+    top: 210px;
 }
 
 .article-category-item {
@@ -182,7 +182,7 @@ body {
 
 .article-link {
     position: absolute;
-    height: 50px;
+    height: 70px;
     width: 85%;
     padding: 15px;
     bottom: 20px;
@@ -204,7 +204,7 @@ body {
 }
 
 .article-link_secondary {
-    height: 70px;
+    height: 97px;
 }
 
 .picture {
@@ -224,7 +224,7 @@ body {
     box-sizing: border-box;
 }
 
-.post {
+.post-list {
     width: 775px;
     box-sizing: border-box;
 }
@@ -291,4 +291,105 @@ p {
     font-family: inherit;
     font-size: 15px;
     line-height: 22px;
+}
+
+.shop-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.shop-item {
+    position: relative;
+    text-align: center;
+    margin-right: 100px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.picture-shop {
+    height: 110%;
+    width: 90%;
+}
+
+.shop-item-description {
+    position: absolute;
+    box-sizing: border-box;
+    height: 250px;
+    top: 180px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid #999966;
+    text-align: left;
+}
+
+.shop-title-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+p {
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.price {
+    margin-bottom: 0;
+    text-decoration: line-through;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+}
+
+.discount {
+    margin-top: 36px;
+    margin-bottom: 0;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+}
+
+.shop-text-link {
+    color: #999966;
+}
+
+.button-shop-first, .button-shop-second, .button-shop-third {
+    display: block;
+    position: absolute;
+    width: 125px;
+    height: 45px;
+    margin-left: 140px;
+    box-sizing: border-box;
+    border: 2px solid #999966;
+    background-color: #999966;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.button-shop-first {
+    bottom: 60px;
+}
+
+.button-shop-second {
+    bottom: 20px;
+}
+
+.button-shop-third {
+    bottom: 40px;
 }
