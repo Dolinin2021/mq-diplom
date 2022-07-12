@@ -139,33 +139,31 @@ body {
     color: #000000;
 }
 
-.rectangle {
+.header-name::after {
+    content: "";
     position: relative;
-    top: -5px;
-    left: 105px;
-    width: 75px;
-    height: 2px;
     display: block;
+    width: 80px;
+    height: 2px;
+    margin-top: 10px;
     margin-right: auto;
-    margin-left: 31.2em;
-    margin-top: 2px;
+    margin-left: auto;
     font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #b59f5b;
+    background-color: #999966;
     opacity: 0.4;
 }
 
 .article-content {
     display: flex;
-    min-width: 1200px;
+    width: 100%;
     justify-content: center;
     margin-top: 20px;
 }
 
 .article-preview {
     position: relative;
-    width: 105%;
+    min-width: 400px;
+    width: 25vw;
     height: 300px;
     padding: 0;
     background-repeat: no-repeat;
@@ -206,7 +204,7 @@ body {
 }
 
 .article-category {
-    position: absolute;
+    position: relative;
     top: 155px;
     left: 58px;
     z-index: 3;
@@ -230,10 +228,12 @@ body {
 }
 
 .article-link {
-    position: absolute;
+    position: relative;
+    top: 100px;
     bottom: 20px;
     left: 10px;
     z-index: 3;
+    display: block;
     width: 85%;
     height: 70px;
     margin-left: 10px;
@@ -254,6 +254,7 @@ body {
 }
 
 .article-link-secondary {
+    top: 73px;
     height: 97px;
 }
 
@@ -374,11 +375,22 @@ p {
 
 .recent-post-article {
     display: flex;
+    margin-top: 30px;
     box-sizing: border-box;
 }
 
 .recent-post-article:nth-child(n+2) {
-    margin-top: 0px;
+    margin-top: 0;
+}
+
+.recent-post-article-fourth {
+    position: relative;
+    bottom: 20px;
+}
+
+.recent-post-article-fifth {
+    position: relative;
+    bottom: 20px;
 }
 
 .recent-post-picture {
@@ -413,6 +425,7 @@ p {
 
 .search-section {
     position: relative;
+    bottom: 20px;
 }
 
 .visually-hidden {
@@ -440,9 +453,9 @@ p {
 }
 
 .search-button {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;
+    top: -75px;
+    left: 275px;
     box-sizing: border-box;
     width: 50px;
     height: 50px;
@@ -454,21 +467,42 @@ p {
     background-position: center center;
 }
 
+.aside-posts {
+    position: relative;
+    left: -50px;
+}
+
+.aside-posts-subscripe {
+    position: relative;
+    bottom: 90px;
+}
+
+.aside-posts-tags-list {
+    position: relative;
+    bottom: 90px;
+}
+
+.aside-posts-categories-list {
+    position: relative;
+    bottom: 90px;
+}
+
 .aside-posts-header {
     position: relative;
     margin-bottom: 43px;
 }
 
 .aside-posts-header::after {
-    content: " ______ ";
-    position: absolute;
-    top: 0;
-    left: 105px;
+    content: "";
+    position: relative;
     display: block;
+    width: 65px;
+    height: 2px;
+    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
     font-size: 26px;
-    color: #999966;
+    background-color: #999966;
     opacity: 0.4;
 }
 
@@ -548,21 +582,19 @@ p {
 
 .shop-item {
     position: relative;
-    width: 100%;
     max-width: 300px;
+    height: 205px;
     margin-right: 100px;
     text-align: center;
 }
 
-.picture-shop {
-    width: 90%;
-    height: 110%;
-}
-
 .shop-item-description {
-    position: absolute;
-    top: 180px;
+    position: relative;
+    top: -30px;
+    left: -15px;
+    display: block;
     box-sizing: border-box;
+    width: 110%;
     height: 250px;
     padding-top: 20px;
     padding-left: 15px;
@@ -586,6 +618,8 @@ p {
 }
 
 .price {
+    position: relative;
+    top: 5px;
     margin-bottom: 0;
     font-family: inherit;
     font-weight: bold;
@@ -608,7 +642,7 @@ p {
 }
 
 .button-shop {
-    position: absolute;
+    position: relative;
     display: block;
     box-sizing: border-box;
     width: 125px;
@@ -628,11 +662,11 @@ p {
 }
 
 .button-shop-second {
-    bottom: 20px;
+    bottom: 40px;
 }
 
 .button-shop-third {
-    bottom: 30px;
+    bottom: 50px;
 }
 
 .container-footer {
@@ -704,7 +738,7 @@ p {
 	left: 0;
 	z-index: 4;
 	display: none;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .popup-visually-hidden::after {
@@ -730,7 +764,7 @@ p {
     position: relative;
 	z-index: 2;
 	box-sizing: border-box;
-	width: 450px;
+	width: 400px;
     height: 610px;
 	padding: 40px;	
 	background-color: #ffffff;
@@ -765,17 +799,18 @@ p {
 }
 
 .popup-header::after {
-    content: " ______ ";
-    position: absolute;
-    top: 0;
-    left: 115px;
+    content: "";
+    position: relative;
+    top: -25px;
+    left: -8px;
     display: block;
-    margin-top: 5px;
+    width: 70px;
+    height: 2px;
+    margin-top: 10px;
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: auto;
     font-size: 26px;
-    font-weight: bold;
-    color: #b59f5b;
+    background-color: #999966;
     opacity: 0.4;
 }
 
@@ -791,14 +826,11 @@ p {
     color: #000000;
 }
 
-.form {
-    position: absolute;
-    top: 120px;
-    z-index: 3;
-}
-
 .form-group {
+    position: relative;
     display: block;
+    box-sizing: border-box;
+    width: 325px;
 }
 
 .select-group {
@@ -906,6 +938,7 @@ p {
 
 .button {
     width: 90%;
+    margin-left: 15px;
     padding: 15px 55px;
     font-family: inherit;
     font-size: 14px;
