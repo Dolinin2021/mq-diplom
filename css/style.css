@@ -53,8 +53,17 @@ body {
         left: 58px;
     }
 
+    .post-list {
+        width: 775px;
+        box-sizing: border-box;
+    }
+
     .post-preview-article {
         margin-left: 20px;
+    }
+
+    .aside-bar {
+        margin-left: 120px;
     }
 
     .aside-posts {
@@ -65,6 +74,10 @@ body {
     .shop-content {
         justify-content: center;
         margin-left: 50px;
+    }
+
+    .shop-item-description {
+        width: 110%;
     }
 
     .container-footer {
@@ -128,12 +141,57 @@ body {
         width: 80%;
     }
 
+    .post-preview {
+        margin-left: -20px;
+    }
+
     .post-list-picture {
         width: 40vw;
     }
 
     .post-preview-article {
         margin-left: 20px;
+    }
+
+    .aside-bar {
+        margin-left: 0;
+    }
+
+    .aside-posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* margin-left: 40px; */
+        padding-left: 40px;
+        width: 100%;
+    }
+
+    .aside-posts-header-topics {
+        position: relative;
+        left: 60px;
+    }
+
+    .categories-list {
+        position: relative;
+        left: -90px;
+        top: 50px;
+    }
+
+    .shop-content {
+        justify-content: left;
+        margin-left: 30px;
+    }
+
+    /* .picture-shop {
+        width: 40vw;
+    } */
+
+    .shop-item-description {
+        width: 110%;
+    }
+
+    .container-footer {
+        margin-top: 400px;
     }
 }
 
@@ -165,14 +223,18 @@ body {
         width: 25%;
     }
 
+    /* .aside-bar {
+        margin-left: 120px;
+    } */
+
     .aside-posts {
         position: relative;
-        left: -80px;
+        left: 30px;
     }
 
     .post-list {
         position: relative;
-        left: 20px;
+        left: 30px;
     }
 }
 
@@ -279,6 +341,10 @@ body {
     
     .header-menu {
         display: none;
+    }
+
+    .shop-content {
+        margin-left: 150px;
     }
 }
 
@@ -501,8 +567,10 @@ body {
 .web-page-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     box-sizing: border-box;
     width: 1200px;
+    /* width: 100%; */
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -510,10 +578,10 @@ body {
     padding-right: 15px;
 }
 
-.post-list {
+/* .post-list {
     width: 775px;
     box-sizing: border-box;
-}
+} */
 
 .post-preview {
     display: flex;
@@ -587,7 +655,6 @@ p {
 
 .aside-bar {
     width: 275px;
-    margin-left: 120px;
 }
 
 .aside-posts:nth-child(n+2) {
@@ -692,7 +759,7 @@ p {
 .search-button {
     position: relative;
     top: -75px;
-    left: 275px;
+    left: 260px;
     box-sizing: border-box;
     width: 50px;
     height: 50px;
@@ -716,12 +783,12 @@ p {
 
 .aside-posts-categories-list {
     position: relative;
-    bottom: 90px;
+    bottom: 100px;
 }
 
 .aside-posts-header {
     position: relative;
-    margin-bottom: 43px;
+    margin-bottom: 30px;
 }
 
 .aside-posts-header::after {
@@ -757,6 +824,7 @@ p {
     flex-wrap: wrap;
     justify-content: flex-start;
     list-style: none;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -806,8 +874,10 @@ p {
 
 .shop-content {
     display: flex;
-    width: 100%;
+    width: 100%;        
+    /* justify-content: center; */
     margin-top: 30px;
+    /* margin-left: 50px; */
 }
 
 .shop-item {
@@ -824,7 +894,7 @@ p {
     left: -15px;
     display: block;
     box-sizing: border-box;
-    width: 110%;
+    /* width: 110%; */
     min-height: 250px;
     padding-top: 20px;
     padding-left: 15px;
@@ -951,6 +1021,10 @@ p {
 .socials-link-tumblr {
     background-image: url("../svg/003-tumblr.svg");
 }
+
+/* .container-footer {
+    margin-top: 300px;
+} */
 
 .copyright-footer {
     display: block;
