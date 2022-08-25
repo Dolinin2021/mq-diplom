@@ -324,31 +324,39 @@
 
         <section class="shop-section">
             <h2 class="header-name">Наши изделия</h2>
-            <div class="shop-content">
-                <article class="shop-item">
-                    <picture class="picture-shop">
-                        <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
-                        <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
-                        <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
-                        <img src="images/shop-item-desk1.jpg" class="picture-shop" alt="Подушка">
-                    </picture>
+            <ul class="shop-content">
+                <li class="shop-item">
+                    <p class="image-container">
+                        <picture class="picture-shop">
+                            <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
+                            <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                            <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                            <img src="images/shop-item-desk1.jpg" class="picture-shop" alt="Подушка">
+                        </picture>
+                    </p>
                     <div class="shop-item-description shop-item-description-first">
                         <h3><a href="#0" class="shop-title-link">Подушки на диван</a></h3>
                         <p>
                             Набор из двух подушек с модными принтами. Видео о создании <a class="shop-text-link">здесь</a>.
                         </p>
-                        <p class="price">1000 &#8381</p>
-                        <span class="discount">800 &#8381</span>
-                        <button type="button" class="button-shop button-shop-first">В магазин</button>
+                        <div class="shop-service-container">
+                            <div>
+                                <p class="price">1000 &#8381</p>
+                                <span class="discount">800 &#8381</span>
+                            </div>
+                            <button type="button" class="button-shop button-shop-first">В магазин</button>
+                        </div>
                     </div>
-                </article>
-                <article class="shop-item"> 
-                    <picture>
-                        <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
-                        <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
-                        <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
-                        <img src="images/shop-item-desk2.jpg" class="picture-shop" alt="Кукла">
-                    </picture>
+                </li>
+                <li class="shop-item">
+                    <p class="image-container">
+                        <picture>
+                            <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
+                            <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                            <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                            <img src="images/shop-item-desk2.jpg" class="picture-shop" alt="Кукла">
+                        </picture>
+                    </p>
                     <div class="shop-item-description">
                         <h3><a href="#0" class="shop-title-link">Кукла «Зайчик»</a></h3>
                         <p>
@@ -356,28 +364,36 @@
                             созданию которой посвящена <a class="shop-text-link">весенняя серия постов</a> 
                             в блоге и несколько подкастов. 
                         </p>
-                        <p class="discount">3500 &#8381</p>
-                        <button type="button" class="button-shop button-shop-second">В магазин</button>
+                        <div class="shop-service-container">
+                            <p class="discount">3500 &#8381</p>
+                            <button type="button" class="button-shop button-shop-second">В магазин</button>
+                        </div>
                     </div>
-                </article>
-                <article class="shop-item shop-item-third">
-                    <picture>
-                        <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
-                        <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
-                        <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
-                        <img src="images/shop-item-desk3.jpg" class="picture-shop" alt="Шестиугольная рамка">
-                    </picture> 
+                </li>
+                <li class="shop-item shop-item-third">
+                    <p class="image-container">
+                        <picture>
+                            <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
+                            <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                            <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                                <img src="images/shop-item-desk3.jpg" class="picture-shop" alt="Шестиугольная рамка">
+                        </picture> 
+                    </p>
                     <div class="shop-item-description">
                         <h3><a href="#0" class="shop-title-link">Шестиугольная рамка</a></h3>
                         <p>
                             Необычная рамка для украшения дома из видео <a class="shop-text-link">«Как сделать рамку из подручных средств за 30 минут»</a>
                         </p>
-                        <p class="price">500 &#8381</p>
-                        <span class="discount">400 &#8381</span>
-                        <button type="button" class="button-shop button-shop-third">В магазин</button>
+                        <div class="shop-service-container">
+                            <div>
+                                <p class="price">500 &#8381</p>
+                                <span class="discount">400 &#8381</span>
+                            </div>
+                            <button type="button" class="button-shop button-shop-third">В магазин</button>
+                        </div>
                     </div>
-                </article>
-            </div>
+                </li>
+            </ul>
         </section>
 
         <footer class="article-footer">
