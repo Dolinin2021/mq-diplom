@@ -36,7 +36,7 @@ body {
     .article-link {
         top: 100px;
         width: 90%;
-        margin-left: 10px;
+        margin-left: 5px;
         padding: 15px;
         padding-top: 40px;
         padding-right: 0;
@@ -83,7 +83,6 @@ body {
     .shop-content {
         width: 100%;
         justify-content: center;
-        /* margin-left: 50px; */
     }
 
     .shop-item {
@@ -91,10 +90,6 @@ body {
         margin-right: 100px;
         text-align: center;
     }
-
-    /* .image-container {
-        text-align: center;
-    } */
 
     .shop-item-description {
         width: 115%;
@@ -172,7 +167,6 @@ body {
     }
 
     .post-list {
-        width: 50%;
         box-sizing: border-box;
         margin-right: 20px;
         margin-left: 35px;
@@ -232,14 +226,13 @@ body {
     }
 
     .shop-section {
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .shop-content {
         flex-wrap: wrap;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0;
     }
 
     .picture-shop {
@@ -264,7 +257,7 @@ body {
     }
 
     .container-footer {
-        width: 730px;
+        width: 88vw;
         padding-left: 0;
     }
 }
@@ -491,6 +484,8 @@ body {
     width: 100%;
     justify-content: center;
     margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
 }
 
 .article-header {
@@ -577,7 +572,6 @@ body {
 
 .web-page-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
@@ -883,44 +877,21 @@ p {
 .shop-item {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
-    /* display: block; */
     box-sizing: border-box;
     padding-top: 20px;
     padding-right: 15px;
-    padding-bottom: 23px;
     padding-left: 15px;
-    /* word-wrap: break-word;
-    border: 3px solid #999966; */
 }
 
 .shop-item-description {
     position: relative;
     top: -57px;
-    /* left: 30px; */
-    /* width: 105%; */
     height: 75%;
     padding: 15px;
     padding-top: 30px;
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
     word-wrap: break-word;
     border: 3px solid #999966;
 }
-
-/* .shop-item-description {
-    position: relative;
-    top: -30px;
-    left: -15px;
-    display: block;
-    box-sizing: border-box;
-    padding-top: 20px;
-    padding-right: 15px;
-    padding-bottom: 23px;
-    padding-left: 15px;
-    word-wrap: break-word;
-    border: 3px solid #999966;
-} */
 
 .shop-title-link {
     position: relative;
@@ -934,6 +905,12 @@ p {
     text-transform: uppercase;
     line-height: 24px;
     color: #000000;
+}
+
+.shop-service-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .price {
@@ -967,7 +944,6 @@ p {
     box-sizing: border-box;
     width: 125px;
     height: 45px;
-    /* margin-left: 140px; */
     font-family: inherit;
     font-weight: bold;
     font-size: 14px;
@@ -976,18 +952,6 @@ p {
     background-color: #999966;
     color: #ffffff;
 }
-
-/* .button-shop-first {
-    bottom: 55px;
-}
-
-.button-shop-second {
-    bottom: 40px;
-}
-
-.button-shop-third {
-    bottom: 50px;
-} */
 
 .container-footer {
     height: 70px;
@@ -1265,11 +1229,4 @@ p {
     cursor: pointer;
     background-color: #b59f5b;
     color: #ffffff;
-}
-
-/*Переместить*/
-.shop-service-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
 }
